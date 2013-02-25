@@ -1,0 +1,68 @@
+﻿<!doctype htmL>
+<html>
+<head>
+    <title>Semantic Design 2</title>
+	<style>
+	    a:hover {
+            color: red;
+	    }
+        </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#">LinkedIn</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#"">Home</a></li>
+                <li><a href="#info">What Is LinkedIn</a></li>
+                <li><a href="#join">Join Today</a></li>
+                <li>
+                    <fieldset id="signIn">
+                        <legend>Sign In</legend>
+                        <ul>
+                            <li>Email: <input type="text" style="width:100px"/></li>
+                            <li>Password: <input type="password" style="width:100px"/></li>
+                            <li><input type="submit" value="Sign In" /></li>
+                        </ul>
+                    </fieldset>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="info">Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities</h1>
+    <ul>
+        <li>Stay informed about your contacts and industry</li>
+        <li>Find the pople & knowledge you need to archeve your goals</li>
+        <li>Control your professional identity online</li>
+    </ul>
+    <h2 id="join">Join LinkedIn Today</h2>
+    <fieldset>
+        <legend>Sign Up</legend>
+        <ul>
+            <li><label for="first">First Name:</label><br />
+                <input type="text" style="width:150px" id="first"/>
+            </li>
+            <li><label for="last">Last Name:</label><br />
+                <input type="text" style="width:150px" id="last"/>
+            </li>
+            <li><label for="email">Email:</label><br />
+                <input type="text" style="width:150px" id="email"/>
+            </li>
+            <li><label for="pass">Password:</label><br />
+                <input type="password" style="width:150px" id="pass"/><br />
+                6 or more characters
+            </li>
+        </ul>
+        <input type="submit" value="Join Now"/><br />
+        <label for="signIn">Already on LinkedIn?</label> <a href="#signIn">Sign in</a>
+    </fieldset>
+    <fieldset>
+        <h4>Search someone by name:</h4>
+        <ul>
+            <li><label for="searchFirst">First Name </label><input type="text" id="searchFirst" style="width:150px"/></li>
+            <li><label for="searchLast">Last Name </label><input type="text" id="searchLast" style="width:150px"/></li>
+        </ul>
+        <input type="submit" value="Go"/>
+    </fieldset>
+</body>
+</html>

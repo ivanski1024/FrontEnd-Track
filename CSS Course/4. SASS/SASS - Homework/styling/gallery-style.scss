@@ -1,0 +1,17 @@
+input
+{
+	display: none;
+}
+
+label > img {
+	width:200px;
+}
+
+input + img {
+	display:none;
+}
+
+input:checked + img {
+display:inline-block;
+width:300px;
+}

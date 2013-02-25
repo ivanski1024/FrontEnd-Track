@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  padding: 10px 20px; }
+  body li {
+    list-style-type: none;
+    font-family: Arial, "DejaVu Sans", "Liberation Sans", Freesans, sans-serif; }
+  body a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px; }
+  body div#wrapper {
+    display: inline-block;
+    position: relative;
+    background: -webkit-linear-gradient(top, #d29bff 0%, #8977ff 100%);
+    border-radius: 10px;
+    padding: 5px 15px; }
+    body div#wrapper aside ul.sidebar li {
+      border-bottom: 1px solid #9d00ff;
+      padding: 5px 15px 5px 15px;
+      position: relative; }
+      body div#wrapper aside ul.sidebar li ul {
+        display: none;
+        position: absolute;
+        right: -242px;
+        top: -5px;
+        background-color: #B5AAFF;
+        border-radius: 10px;
+        width: 235px;
+        box-sizing: border-box;
+        /*background: src('imgs/arrow.png');*/ }
+        body div#wrapper aside ul.sidebar li ul li {
+          padding-left: 20px;
+          padding-right: 5px;
+          border: none; }
+          body div#wrapper aside ul.sidebar li ul li a {
+            font-size: 18px;
+            border-bottom: 1px solid #9d00ff;
+            padding: 20px 5px 5px 5px; }
+          body div#wrapper aside ul.sidebar li ul li:first-of-type {
+            padding-top: 5px;
+            background: url("imgs/arrow.png") no-repeat;
+            background-position: 0px 5px; }
+          body div#wrapper aside ul.sidebar li ul li:last-of-type {
+            padding-bottom: 5px; }
+      body div#wrapper aside ul.sidebar li:last-of-type {
+        border: none; }
+    body div#wrapper aside ul.sidebar li:hover {
+      border-radius: 5px; }
+      body div#wrapper aside ul.sidebar li:hover ul {
+        display: inline-block; }
+        body div#wrapper aside ul.sidebar li:hover ul li a:hover {
+          border: 1px solid #9d00ff; }
+    body div#wrapper aside ul.sidebar > li:hover {
+      border: 1px solid #9d00ff; }

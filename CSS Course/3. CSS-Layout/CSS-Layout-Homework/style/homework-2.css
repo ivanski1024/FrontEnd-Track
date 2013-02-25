@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+.main-div, .outside-box, .inside-box, .img {
+  float: left; }
+
+body {
+  margin: 15px;
+  background-color: black; }
+  body .main-div {
+    background-color: #eeeeee;
+    width: 450px;
+    padding: 10px;
+    border-radius: 5px; }
+    body .main-div header {
+      margin: 0 0 10px 0; }
+    body .main-div .outside-box {
+      margin: 20px 0 20px 0;
+      padding: 15px;
+      border: 1px solid #acacac;
+      background-color: #fff; }
+      body .main-div .outside-box .inside-box {
+        padding: 0px;
+        position: relative; }
+        body .main-div .outside-box .inside-box .img {
+          width: 150px;
+          border: 1px solid #acacac;
+          display: inline-block;
+          margin: 0 15px 0 0; }
+        body .main-div .outside-box .inside-box img:after {
+          content: "";
+          display: block;
+          clear: both; }
+        body .main-div .outside-box .inside-box .buttons {
+          margin: 20px 0 0 0;
+          text-align: right; }
+        body .main-div .outside-box .inside-box button {
+          padding: 2px 15px;
+          color: white;
+          border: 1px outset #df7d76;
+          background-color: #CC0001;
+          border-color: #921011;
+          margin: 0 3px 0px 0; }
+        body .main-div .outside-box .inside-box button.listen {
+          background: url("../images/button-listen.png"); }
+        body .main-div .outside-box .inside-box button.add {
+          background: url("../images/button-add.png"); }

@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#first
+{
+	width: 1000px;
+}
+div
+{
+	border: 2px solid red;
+	background-color: black;
+	border-radius:  3%/50%;
+	width: 89%;  
+}
+#last
+{
+	display: none;
+}

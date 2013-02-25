@@ -1,0 +1,56 @@
+
+div {
+    background-color: #595959;
+    width: 350px;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+td, th {
+    padding: 5px 20px 5px 5px;
+    vertical-align: top;
+}
+
+th {
+    font-weight: 100;
+    font-size: x-large;
+    color: #AAAAAA;
+    text-align: left;
+}
+
+.name {
+    color: white;
+}
+
+h4 {
+    font-style: italic;
+    font-weight:normal;
+    color: #E4E4E4;
+    width: 120px;
+    padding-bottom:0px;
+}
+
+a {
+    text-decoration: none;
+    color: #BEC188;
+}
+
+.support {
+    color: #FD0618;
+    font-weight: bold;
+}
+
+.actions {
+    color: #B3B3B3;
+}
+
+.status {
+    color: #DF6A2C;
+    font-weight: bold;
+}
+#circle
+{
+    border-radius: 50%;
+    background-color: #71b47a;
+}

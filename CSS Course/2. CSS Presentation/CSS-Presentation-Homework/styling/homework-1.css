@@ -1,0 +1,14 @@
+#whole-text {
+	width: 1100px;
+	font-family: consolas;
+	color: #0094ff;
+    font-size: 26px;
+}
+#first-letter{
+	font-family: edwardian script itc;
+    font-size: 220%;
+    font-weight: 600;
+}
+#first-line {
+	font-weight:bold;
+}

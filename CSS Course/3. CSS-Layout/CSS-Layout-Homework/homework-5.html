@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Apple</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+            background-color: black;
+        }
+
+        #main-div {
+            display: inline-block;
+            width: 800px;
+            background-color: white;
+            padding: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        nav {
+            border-bottom: 1px solid #5A5A5A;
+            margin: 20px;
+        }
+
+            nav ul {
+                text-align: center;
+                font-size: xx-large;
+            }
+
+                nav ul li {
+                    display: inline;
+                }
+
+                    nav ul li a {
+                        color: #00A8EF;
+                        font-family: Arial;
+                    }
+
+        .laptops {
+            display: inline-block;
+            padding: 15px;
+            border: 2px solid black;
+        }
+
+        fieldset {
+            border-color: black;
+            width: 250px;
+            display: inline-block;
+        }
+
+            fieldset .group {
+                display: inline-block;
+            }
+
+            fieldset img {
+                width: 150px;
+                display: inline-block;
+            }
+
+            fieldset ul {
+                display: inline-block;
+                text-align: left;
+            }
+
+                fieldset ul li, fieldset span {
+                    margin: 10px 0 10px 0;
+                }
+
+        aside {
+            display: inline-block;
+            vertical-align:central;
+            height:100%;
+        }
+        aside .sliders {
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main-div">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Apple</a>   </li>
+                    <li><a href="#">Toshiba</a> </li>
+                    <li><a href="#">Lenovo</a>  </li>
+                    <li><a href="#">Dell</a>    </li>
+                    <li><a href="#">Asus</a>    </li>
+                    <li><a href="#">Acer</a>    </li>
+                    <li><a href="#">HP</a>      </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="laptops border">
+            <fieldset>
+                <legend>Apple Macbook Air</legend>
+                <div class="group   ">
+                    <img src="images\apple.jpg" /><br />
+                    <span class="price">1300 USD</span>
+                </div>
+                <ul class="specs">
+                    <li>64GB SSD</li>
+                    <li>2GB DDR</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Apple Macbook Air</legend>
+                <div class="group   ">
+                    <img src="images\apple.jpg" /><br />
+                    <span class="price">1300 USD</span>
+                </div>
+                <ul class="specs">
+                    <li>64GB SSD</li>
+                    <li>2GB DDR</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Apple Macbook Air</legend>
+                <div class="group   ">
+                    <img src="images\apple.jpg" /><br />
+                    <span class="price">1300 USD</span>
+                </div>
+                <ul class="specs">
+                    <li>64GB SSD</li>
+                    <li>2GB DDR</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Apple Macbook Air</legend>
+                <div class="group   ">
+                    <img src="images\apple.jpg" /><br />
+                    <span class="price">1300 USD</span>
+                </div>
+                <ul class="specs">
+                    <li>64GB SSD</li>
+                    <li>2GB DDR</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <br />
+            <fieldset>
+                <legend>Apple Macbook Air</legend>
+                <div class="group   ">
+                    <img src="images\apple.jpg" /><br />
+                    <span class="price">1300 USD</span>
+                </div>
+                <ul class="specs">
+                    <li>64GB SSD</li>
+                    <li>2GB DDR</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Apple Macbook Air</legend>
+                <div class="group   ">
+                    <img src="images\apple.jpg" /><br />
+                    <span class="price">1300 USD</span>
+                </div>
+                <ul class="specs">
+                    <li>64GB SSD</li>
+                    <li>2GB DDR</li>
+                    <li>Intel Core i5</li>
+                </ul>
+            </fieldset>
+        </div>
+        <aside>
+            <div class="sliders">
+                <p>
+                    Min price: 500 USD<br />
+                    <input type="range" />
+                </p>
+                <p>
+                    Max price: 1500 USD<br />
+                    <input type="range" />
+                </p>
+                <p>
+                    Min RAM: 4GB<br />
+                    <input type="range" />
+                </p>
+                <p>
+                    Max RAM: 16GB<br />
+                    <input type="range" />
+                </p>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#wrapper {
+  width: 960px;
+  height: 200px;
+  background: -webkit-linear-gradient(top, #002d44 0%, #77d1ff 100%); }
+  #wrapper nav {
+    padding: 50px; }
+    #wrapper nav ul {
+      position: relative; }
+      #wrapper nav ul li {
+        padding: 5px 10px;
+        display: inline-block;
+        font-size: 32px;
+        margin-right: 5px;
+        font-family: Arial; }
+        #wrapper nav ul li a {
+          color: black;
+          text-decoration: none; }
+        #wrapper nav ul li ul {
+          left: 0;
+          display: none;
+          position: absolute;
+          border-radius: 15px; }
+          #wrapper nav ul li ul li {
+            margin-right: 0px;
+            position: relative; }
+            #wrapper nav ul li ul li ul {
+              width: 380px;
+              box-sizing: border-box;
+              position: absolute;
+              padding: 15px 24px;
+              padding-right: 28px; }
+              #wrapper nav ul li ul li ul li {
+                border-bottom: 1px solid black;
+                margin-left: 5px;
+                padding: 5px; }
+                #wrapper nav ul li ul li ul li:last-of-type {
+                  border-bottom: none; }
+        #wrapper nav ul li:hover {
+          background-color: rgba(0, 79, 119, 0.7);
+          border-radius: 15px; }
+      #wrapper nav ul li.selected {
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 15px; }
+        #wrapper nav ul li.selected > ul {
+          display: block; }
+          #wrapper nav ul li.selected > ul li:hover {
+            background-color: rgba(0, 79, 119, 0.7);
+            border-radius: 15px; }
+            #wrapper nav ul li.selected > ul li:hover ul {
+              display: block;
+              background: -webkit-linear-gradient(top, #feffff 0%, #77d1ff 100%); }
+              #wrapper nav ul li.selected > ul li:hover ul li {
+                display: block;
+                /*border-radius: 15px;*/ }
+    #wrapper nav > ul {
+      position: relative; }

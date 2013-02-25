@@ -1,0 +1,68 @@
+* {
+	margin:0;
+	padding:0;
+}
+#wrapper {
+	/*background: url('images/registration-form.png');*/
+	font-family: Verdana;
+	padding: 0 50px;
+	a {
+		color: black;
+		font-size: 19px;
+		text-decoration:none;
+	}
+	a:first-of-type {
+	}
+	.current {
+		font-weight:bold;
+	}
+	.invisible {
+		display:none;
+	}
+	
+	#form-login, #form-register 
+	{
+		padding: 0px 0;	
+		fieldset
+		{
+			legend
+			{ 
+				margin: 0 30px;
+				margin-bottom: 10px;
+				font-size:27px;
+				font-style: italic;
+				font-weight: bold;
+				padding-left: 10px;
+				padding-right:10px;
+				background-color: white;
+			}
+			box-sizing: border-box;
+			text-align:right;
+			padding-right: 75px;
+			width:450px;
+			border:5px solid black ;
+			border-radius: 4px;
+			background: -webkit-linear-gradient( top, #ffffff 0%, #595959 100%);
+			label {
+				font-weight:bold;
+				vertical-align:center;
+			}
+			input {
+				margin: 3px 0 4px 1px; 
+				border-radius:15px;
+				padding: 10px 15px;
+				border: 0px;
+				background: -webkit-linear-gradient( top, #000 0%, #CACACA 100%);
+			}
+			button {
+				border: 2px solid black;
+				padding: 5px 10px;
+				margin: 6px 0;
+				margin-bottom: 10px;
+				border-radius: 15px;
+				background: -webkit-linear-gradient( top, #000 0%, #ffffff 100%);
+				font-size: 19px;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5A18F38D-790C-46B6-9CC6-B21FF34944D2}"
+	ProjectSection(SolutionItems) = preProject
+		style\homework-1.css = style\homework-1.css
+		homework-1.html = homework-1.html
+		style\homework-2.css = style\homework-2.css
+		homework-2.html = homework-2.html
+		style\homework-3.css = style\homework-3.css
+		homework-3.html = homework-3.html
+		homework-5.html = homework-5.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

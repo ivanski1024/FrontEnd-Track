@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#wrapper {
+  /*background: url('images/registration-form.png');*/
+  font-family: Verdana;
+  padding: 0 50px; }
+  #wrapper a {
+    color: black;
+    font-size: 19px;
+    text-decoration: none; }
+  #wrapper .current {
+    font-weight: bold; }
+  #wrapper .invisible {
+    display: none; }
+  #wrapper #form-login, #wrapper #form-register {
+    padding: 0px 0; }
+    #wrapper #form-login fieldset, #wrapper #form-register fieldset {
+      box-sizing: border-box;
+      text-align: right;
+      padding-right: 75px;
+      width: 450px;
+      border: 5px solid black;
+      border-radius: 4px;
+      background: -webkit-linear-gradient(top, white 0%, #595959 100%); }
+      #wrapper #form-login fieldset legend, #wrapper #form-register fieldset legend {
+        margin: 0 30px;
+        margin-bottom: 10px;
+        font-size: 27px;
+        font-style: italic;
+        font-weight: bold;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: white; }
+      #wrapper #form-login fieldset label, #wrapper #form-register fieldset label {
+        font-weight: bold;
+        vertical-align: center; }
+      #wrapper #form-login fieldset input, #wrapper #form-register fieldset input {
+        margin: 3px 0 4px 1px;
+        border-radius: 15px;
+        padding: 10px 15px;
+        border: 0px;
+        background: -webkit-linear-gradient(top, black 0%, #cacaca 100%); }
+      #wrapper #form-login fieldset button, #wrapper #form-register fieldset button {
+        border: 2px solid black;
+        padding: 5px 10px;
+        margin: 6px 0;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        background: -webkit-linear-gradient(top, black 0%, white 100%);
+        font-size: 19px; }

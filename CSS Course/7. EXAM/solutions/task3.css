@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, "Times New Roman", "Nimbus Roman No9 L", "Freeserif", Times, serif;
+  font-size: 16px; }
+
+body {
+  padding: 30px; }
+  body div#wrapper {
+    border: 1px solid black;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(top, #eeeeee 0%, #aaaaaa 100%);
+    /* Chrome10+,Safari5.1+ */
+    display: inline-block;
+    width: 382px;
+    padding: 15px;
+    padding-bottom: 7px;
+    box-sizing: border-box; }
+    body div#wrapper div h1 {
+      font-weight: bold;
+      font-size: 29px;
+      color: #555555;
+      padding-left: 7px;
+      padding-bottom: 10px; }
+    body div#wrapper div li {
+      color: #555555;
+      list-style-type: none;
+      border: 1px solid black;
+      display: inline-block;
+      width: 232px;
+      height: 67px;
+      box-sizing: border-box;
+      border-radius: 15px;
+      margin-bottom: 5px;
+      padding: 5px 15px; }
+      body div#wrapper div li span {
+        font-weight: bold;
+        font-size: 18px; }
+      body div#wrapper div li span.date {
+        font-family: Consolas;
+        text-align: right;
+        display: block;
+        font-size: 13px;
+        font-weight: normal; }
+      body div#wrapper div li.me-item {
+        float: right;
+        background: -webkit-linear-gradient(top, #29edff 0%, #c0faff 100%); }
+      body div#wrapper div li.toshko-item {
+        background: -webkit-linear-gradient(top, #dfffd2 0%, #6fff3b 100%); }
+        body div#wrapper div li.toshko-item span {
+          text-align: right;
+          display: block; }
+          body div#wrapper div li.toshko-item span.date {
+            text-align: left; }
+    body div#wrapper div input {
+      width: 275px;
+      height: 35px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 2px;
+      background-color: #EEEEEE;
+      padding-left: 15px;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      font-size: 14px;
+      color: #555555; }
+    body div#wrapper div button {
+      padding: 5px 15px;
+      font-family: sans-serif;
+      font-size: 18px;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      background: -webkit-linear-gradient(top, #ededed 0%, #adadad 100%);
+      vertical-align: middle; }
+      body div#wrapper div button:hover {
+        background: #EEEEEE; }

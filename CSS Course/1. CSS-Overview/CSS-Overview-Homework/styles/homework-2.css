@@ -1,0 +1,32 @@
+﻿table {
+    border-collapse:collapse;
+    font-family: Arial;
+    border-color:transparent;
+    font-size:13px;
+    font-weight:normal;
+    text-align:left;
+}
+th {
+    background-color:#52B506;
+    border-color:#6CC227;
+    border-bottom-color:#278200;
+    color:white;
+}
+.name, .city, .country {
+    padding-right:40px;
+}
+td, th {
+    padding: 5px 10px 5px 10px;
+}
+td {
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-left-color:#C3C1A6;
+    border-right-color:#C3C1A6;
+}
+.even {
+    background-color:#ECECD8;
+}
+img {
+    padding-right:5px;
+}

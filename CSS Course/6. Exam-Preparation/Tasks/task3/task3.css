@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+#wrapper {
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 110px; }
+  #wrapper #popup-box .popup-item {
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    position: relative; }
+    #wrapper #popup-box .popup-item a {
+      text-decoration: none;
+      color: black; }
+      #wrapper #popup-box .popup-item a img {
+        width: 25px; }
+    #wrapper #popup-box .popup-item span.current {
+      font-weight: bold; }
+    #wrapper #popup-box .popup-item:first-of-type {
+      border-top: 1px solid black; }
+    #wrapper #popup-box .popup-item .popup-content {
+      position: absolute;
+      left: 120px;
+      top: -2px; }
+      #wrapper #popup-box .popup-item .popup-content .btn-popup-close {
+        position: absolute;
+        right: 16px;
+        top: 17px;
+        border: 1px solid black;
+        padding: 0 5px;
+        border-radius: 5px; }
+        #wrapper #popup-box .popup-item .popup-content .btn-popup-close:hover {
+          text-decoration: underline; }
+      #wrapper #popup-box .popup-item .popup-content div fieldset {
+        padding: 13px 15px 15px 15px;
+        border: 1px solid black; }
+        #wrapper #popup-box .popup-item .popup-content div fieldset legend {
+          font-weight: bold;
+          padding: 2px;
+          font-size: 19px; }
+        #wrapper #popup-box .popup-item .popup-content div fieldset button:hover {
+          background: #CCCCCC; }
+        #wrapper #popup-box .popup-item .popup-content div fieldset button {
+          height: 26px;
+          width: 84px;
+          border-radius: 13px;
+          background: -webkit-linear-gradient(top, #cacaca 0%, #686868 100%);
+          border: none; }
+    #wrapper #popup-box .popup-item .invisible {
+      display: none; }

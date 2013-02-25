@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link href="styling/homework-4.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="calculator">
+        <header>
+            <nav>
+                <ul id="main-menu">
+                    <li><span class="shortcut">V</span>iew</li>
+                    <li><span class="shortcut">E</span>dit</li>
+                    <li><span class="shortcut">H</span>elp</li>
+                </ul>
+            </nav>
+        </header>
+        <div id="calculator-body">
+            <input type="text" id="input-field" value="5318008" />
+            <div id="numerics">
+                <table>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0000</td>
+                    </tr>
+                    <tr>
+                        <td class="decimal-num" colspan="4">63</td>
+                        <td class="decimal-num" colspan="3">47</td>
+                        <td class="decimal-num2">32</td>
+                    </tr>
+                    <tr>
+                        <td>0000</td>
+                        <td>0000</td>
+                        <td>0101</td>
+                        <td>0001</td>
+                        <td>0010</td>
+                        <td>0101</td>
+                        <td>0111</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td class="decimal-num" colspan="4">31</td>
+                        <td class="decimal-num" colspan="3">15</td>
+                        <td class="decimal-num2">0</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="radio-menus">
+                <div class="radio-group">
+                    <ul class="radio-buttons">
+                        <li>
+                            <input name="counting-system" type="radio" id="hex" value="Hex" /><label for="hex">Hex</label><br /></li>
+                        <li>
+                            <input name="counting-system" type="radio" id="dec" value="Dec" checked="checked" /><label for="dec">Dec</label><br /></li>
+                        <li>
+                            <input name="counting-system" type="radio" id="oct" value="Oct" /><label for="oct">Oct</label><br /></li>
+                        <li>
+                            <input name="counting-system" type="radio" id="bin" value="Bin" /><label for="bin">Bin</label><br /></li>
+                    </ul>
+                </div>
+                <div class="radio-group">
+                    <ul class="radio-buttons">
+                        <li>
+                            <input name="words" type="radio" id="qword" value="Qword" checked="checked" /><label for="qword">Qword</label></li>
+                        <li>
+                            <input name="words" type="radio" id="dword" value="Dword" /><label for="dword">Dword</label>
+                        </li>
+                        <li>
+                            <input name="words" type="radio" id="word" value="Word" /><label for="word">Word</label>
+                        </li>
+                        <li>
+                            <input name="words" type="radio" id="byte" value="Byte" /><label for="byte">Byte</label>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="keyboard">
+                <div class="table-row">
+                    <div class="table-cell">
+                        <button disabled="disabled">&nbsp; </button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">Mod</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">A</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="other-buttons">MC</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="other-buttons">MR</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="other-buttons">MS</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="other-buttons">M+</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="other-buttons">M-</button>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <button class="func-buttons">(</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">)</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">B</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons" id="arrow">←</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">CE</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">C</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">±</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">&#x221A;</button>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <button class="func-buttons">RoL</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">RoR</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">C</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="digits">7</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="digits">8</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="digits">9</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">/</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">%</button>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <button class="func-buttons">Or</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">Xor</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">D</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="digits">4</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="digits">5</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="digits">6</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">*</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">1/x</button>
+                    </div>
+                </div>
+                <div class="table-cell" id="equals-td">
+                    <button id="equals">=</button>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <button class="func-buttons">Lsh</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">Rsh</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">E</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="digits">1</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="digits">2</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="digits">3</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">-</button>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <button class="func-buttons">Not</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">And</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">F</button>
+                    </div>
+                    <div class="table-cell" id="zero-td">
+                        <button id="zero">0</button>
+                    </div>
+                    <div class="table-cell">
+                        <button disabled="disabled">.</button>
+                    </div>
+                    <div class="table-cell">
+                        <button class="func-buttons">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
