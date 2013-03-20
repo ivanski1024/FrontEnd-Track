@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>What is the 3rd bit</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+	    function getThatBit(number, bitPos)
+	    {
+	        var mask = 1 << (bitPos - 1);
+	        mask &= number;
+	        mask >>= (bitPos - 1);
+	        jsConsole.writeLine("The " + bitPos + " from right to left of " + number + " is: " + mask);
+	    }
+	    
+	    getThatBit(4, 3);
+	    getThatBit(7, 3);
+	    getThatBit(8, 3);
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+	    function findGreatest(array)
+	    {
+	        var max;
+	        jsConsole.write("The greatest number of: ");
+	        for (var i = 0; i < 5; i++)
+	        {
+
+	            jsConsole.write(array[i]+" ");
+	            if (i == 0)
+	            {
+	                max = array[i];
+	            }
+	            else
+	            {
+	                if (array[i] > max)
+	                {
+	                    max = array[i];
+	                }
+	            }
+	        }
+	        jsConsole.writeLine(" is " + max);
+	    }
+	    var array = [];
+	    array[0] = 1;
+	    array[1] = 8;
+	    array[2] = 12;
+	    array[3] = 45;
+	    array[4] = 3;
+
+	    findGreatest(array);
+
+	</script>
+</body>
+</html>

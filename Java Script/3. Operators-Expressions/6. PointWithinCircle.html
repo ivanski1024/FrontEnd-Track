@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Point Within a Circle</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+	    function pointWithinCircle(x, y, r)
+	    {
+	        if ((x * x + y * y) <= r*r)
+	        {
+	            jsConsole.writeLine(" The point [" + x + ", " + y + "] is within a circle with radius r=" + r);
+	        }
+	        else
+	        {
+	            jsConsole.writeLine(" The point [" + x + ", " + y + "] isn't within a circle with radius r=" + r);
+	        }
+	    }
+	    pointWithinCircle(1, 1, 1);
+	    pointWithinCircle(1, 1, 2);
+	    pointWithinCircle(3, 4, 5);
+	</script>
+</body>
+</html>

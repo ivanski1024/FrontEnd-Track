@@ -1,0 +1,27 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Divided By 7 And</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+	<script>
+	    function divided(number)
+	    {
+	        if ((number % 7 == 0) && (number     % 5 == 0))
+	        {
+	            jsConsole.writeLine(number + " is divided by 7 and 5 in the same time!");
+	        }
+	        else
+	        {
+	            jsConsole.writeLine(number + " isn't divided by 7 and 5 in the same time!");
+	        }
+            
+	    }
+	    divided(35);
+	    divided(42);
+	    divided(70);
+	</script>
+</body>
+</html>

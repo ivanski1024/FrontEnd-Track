@@ -1,0 +1,26 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Third digit 7</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+
+	    function isThatDigit(number, position, wantedDigit) {
+
+	        if (number.toString()[number.toString().length - position] == wantedDigit)
+	        {
+	            jsConsole.writeLine("The "+ position +" digit right to left of " + number + " is " + wantedDigit + ".");
+	        }
+	        else
+	        {
+	            jsConsole.writeLine("The " + position + " digit right to left of " + number + " isn't " + wantedDigit + ".");
+	        }
+	    }
+	    isThatDigit(123456789, 3, 7);
+	    isThatDigit(987654321, 3, 7);
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+	    function isItPrime(n)
+	    {
+	        var prime =
+                (
+                (n % 2 == 0) ||
+                (n % 3 == 0) ||
+                (n % 5 == 0) ||
+                (n % 7 == 0)
+                       ) &&
+                (n != 2) &&
+                (n != 3) &&
+                (n != 5) &&
+                (n != 7);
+	        if (!prime)
+	        {
+	            jsConsole.writeLine(n + " is a prime number");
+	        }
+	        else
+	        {
+	            jsConsole.writeLine(n + " is a composite number");
+	        }
+	    }
+
+        isItPrime(4)
+	    isItPrime(5);
+	    isItPrime(11);
+	    isItPrime(37);
+	    isItPrime(38);
+
+	</script>
+</body>
+</html>

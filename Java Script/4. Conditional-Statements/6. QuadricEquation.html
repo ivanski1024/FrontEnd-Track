@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Solve Quadric Equation</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+	    function solveIt(a, b, c)
+	    {
+	        var D = b * b - 4 * a * c;
+	        if (D > 0)
+	        {
+	            var x1 = (-b - Math.sqrt(D)) / (2 * a);
+	            var x2 = (-b + Math.sqrt(D)) / (2 * a);
+	            jsConsole.write(a + "x<span class=\"power\">2</span> + " + b + "x + " + c + "=0");
+	            jsConsole.writeLine("   X<span class=\"index\">1</span>=" + x1 + " X<span class=\"index\">2</span>=" + x2);
+	        }
+	        else if (D == 0)
+	        {
+	            var x = -b / (2 * a);
+	            jsConsole.write(a + "x<span class=\"power\">2</span> + " + b + "x + " + c + "=0");
+	            jsConsole.writeLine("   X<span class=\"index\">1/2</span> = " + x);
+	        }
+	        else
+	        {
+	            jsConsole.write(a + "x<span class=\"power\">2</span> + " + b + "x + " + c + "=0");
+	            jsConsole.writeLine("   Doesn't have real roots!");
+	        }
+	    }
+	    solveIt(1, 2, -3);
+	    solveIt(1, -2, 1);
+	    solveIt(1, 2, 3);
+	</script>
+</body>
+</html>

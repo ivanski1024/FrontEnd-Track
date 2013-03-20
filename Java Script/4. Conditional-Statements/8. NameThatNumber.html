@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function nameThatNumber(number)
+        {
+            var hundreds = parseInt((number / 100));
+            var tens = parseInt((number / 10) % 10);
+            var ones = parseInt(number % 10)    ;
+            var isTeen = false, isWithTwoDigits = false;
+            var name = "";
+            switch (hundreds)
+            {
+                case 0:
+                    isWithTwoDigits = true;
+                    break;
+                case 1:
+                    name += ("one hundred ");
+                    break;
+                case 2:
+                    name += ("two hundred ");
+                    break;
+                case 3:
+                    name += ("three hundred ");
+                    break;
+                case 4:
+                    name += ("four hundred ");
+                    break;
+                case 5:
+                    name += ("five hundred ");
+                    break;
+                case 6:
+                    name += ("six hundred ");
+                    break;
+                case 7:
+                    name += ("seven hundred ");
+                    break;
+                case 8:
+                    name += ("eight hundred ");
+                    break;
+                case 9:
+                    name += ("nine hundred ");
+                    break;
+            }
+            switch (tens)
+            {
+                case 1:
+                    isTeen = true;
+                    if (!isWithTwoDigits)
+                        name += ("and ");
+                    switch (ones)
+                    {
+                        case 0:
+                            name += ("ten");
+                            break;
+                        case 1:
+                            name += ("eleven");
+                            break;
+                        case 2:
+                            name += ("twelve");
+                            break;
+                        case 3:
+                            name += ("thirteen");
+                            break;
+                        case 4:
+                            name += ("fourteen");
+                            break;
+                        case 5:
+                            name += ("fifteen");
+                            break;
+                        case 6:
+                            name += ("sixteen");
+                            break;
+                        case 7:
+                            name += ("seventeen");
+                            break;
+                        case 8:
+                            name += ("eighteen");
+                            break;
+                        case 9:
+                            name += ("nineteen");
+                            break;
+                    }
+                    break;
+
+                case 2:
+                    name += ("twenty ");
+                    break;
+                case 3:
+                    name += ("thirty ");
+                    break;
+                case 4:
+                    name += ("fourty ");
+                    break;
+                case 5:
+                    name += ("fifty ");
+                    break;
+                case 6:
+                    name += ("sixty ");
+                    break;
+                case 7:
+                    name += ("seventy ");
+                    break;
+                case 8:
+                    name += ("eighty ");
+                    break;
+                case 9:
+                    name += ("ninety ");
+                    break;
+            }
+            if (!isTeen)
+            {
+                switch (ones)
+                {
+                    case 0:
+                        if (hundreds == 0 && tens == 0)
+                        {
+                            name += ("zero");
+                        }
+                        break;
+                    case 1:
+                        name += ("one");
+                        break;
+                    case 2:
+                        name += ("two");
+                        break;
+                    case 3:
+                        name += ("three");
+                        break;
+                    case 4:
+                        name += ("four");
+                        break;
+                    case 5:
+                        name += ("five");
+                        break;
+                    case 6:
+                        name += ("six");
+                        break;
+                    case 7:
+                        name += ("seven");
+                        break;
+                    case 8:
+                        name += ("eight");
+                        break;
+                    case 9:
+                        name += ("nine");
+                        break;
+                }
+            }
+
+
+            name = name[0].toUpperCase() + name.substr(1, name.length - 1);
+            jsConsole.writeLine(number + " " + name);
+        }
+
+        nameThatNumber(63);
+        nameThatNumber(253);
+        nameThatNumber(513);
+        nameThatNumber(999);
+
+    </script>
+</body>
+</html>

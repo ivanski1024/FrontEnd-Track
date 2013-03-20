@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sorting</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+
+        function sort (a,b,c)
+        {
+
+            jsConsole.write(a + " " + b + " " + c);
+            var boof;
+            if (a < b)
+            {
+                if (a < c)
+                {
+                    if (b > c)
+                    {
+                        boof = b;
+                        b = c;
+                        c = boof;
+
+                        boof = a;
+                        a = c;
+                        c = boof;
+                    }
+                    else
+                    {
+                        boof = a;
+                        a = c;
+                        c = boof;
+                    }
+                }
+                else if (a > c)
+                {
+                    boof = a;
+                    a = b;
+                    b = boof;
+                }
+
+            }
+            else
+            {
+                if (c > b)
+                {
+                    boof = b;
+                    b = c;
+                    c = boof;
+                    if (b > a)
+                    {
+                        boof = a;
+                        a = b;
+                        b = boof;
+                    }
+                }
+            }
+            jsConsole.writeLine(" after sorting in descending order are " + a + " " + b + " " + c);
+        }
+
+        sort(1, 2, 3);
+        sort(1, 3, 2);
+        sort(2, 1, 3);
+        sort(2, 3, 1);
+        sort(3, 1, 2);
+        sort(3, 2, 1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Finding the Biggest</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+	    function findBiggest(a, b, c) 
+	    {
+	        var max;
+	        if (a > b)
+	        {
+	            if (a > c) {
+	                max = a;
+	            }
+	            else {
+	                max = c;
+	            }
+	        }
+	        else 
+	        {
+	            if (b > c) {
+	                max = b;
+	            }
+	            else {
+	                max = c;
+	            }
+	        }
+	        jsConsole.writeLine("The biggest number from  " + a + ", " + b + ", " + c + " is: " + max);
+	    }
+
+	    findBiggest(1, 2, 3);
+	    findBiggest(9, 8, 7);
+	    findBiggest(6, 6, 6);
+	</script>
+</body>
+</html>

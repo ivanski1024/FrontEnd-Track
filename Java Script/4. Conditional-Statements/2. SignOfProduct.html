@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sign of Product</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+	    function checkSign(a, b, c)
+	    {
+	        if( (a>0 && b>0 && c>0) || (a<0 && b<0 && c>0) || (a<0 && b>0 && c<0) || (a>0 && b<0 && c<0))
+	        {
+	            jsConsole.writeLine("The sign of the product of " + a + ", " + b + ", " + c + " is +");
+	        }
+	        else if ((a < 0 && b < 0 && c < 0) || (a < 0 && b > 0 && c > 0) || (a > 0 && b < 0 && c > 0) || (a > 0 && b > 0 && c < 0))
+	        {
+	            jsConsole.writeLine("The sign of the product of " + a + ", " + b + ", " + c + " is -");
+	        }
+	        else
+	        {
+	            jsConsole.writeLine("The pruduct of " + a + ", " + b + ", " + c + " is 0");
+	        }
+	    }
+	    checkSign(1, 2, 3);
+	    checkSign(1, 2, -3);
+	    checkSign(-1, 0, 1);
+	</script>
+</body>
+</html>

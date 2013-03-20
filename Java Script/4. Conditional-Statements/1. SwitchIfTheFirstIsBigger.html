@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Check if first one is bigger</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+	    function check(first, second)
+	    {
+	        jsConsole.writeLine("----------------------------------------------------------------------------");
+	        jsConsole.writeLine("Current first number is " + first + " and the current second one is " + second);
+	        if (first > second)
+	        {
+	            first += second;
+	            second = first - second;
+	            first -= second;
+	        }
+	        jsConsole.writeLine("The new first number is " + first + " and the new second one is " + second);
+	        jsConsole.writeLine("----------------------------------------------------------------------------");
+	    }
+	    check(3, 5);
+	    check(5, 3);
+	</script>
+</body>
+</html>

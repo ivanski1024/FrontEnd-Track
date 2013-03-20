@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Name that Digit</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+	    function nameDigit()
+	    {
+	        digit = prompt("Enter a digit");
+	        digit=parseInt(digit);
+	        switch(digit)
+	        {
+	            case 0:
+	                jsConsole.writeLine( digit + " is zero");
+	                break;
+	            case 1:
+	                jsConsole.writeLine( digit + " is one");
+	                break;
+	            case 2:
+	                jsConsole.writeLine( digit + " is two");
+	                break;
+	            case 3:
+	                jsConsole.writeLine( digit + " is three");
+	                break;
+	            case 4:
+	                jsConsole.writeLine( digit + " is four");
+	                break;
+	            case 5:
+	                jsConsole.writeLine( digit + " is five");
+	                break;
+	            case 6:
+	                jsConsole.writeLine( digit + " is six");
+	                break;
+	            case 7:
+	                jsConsole.writeLine( digit + " is seven");
+	                break;
+	            case 8:
+	                jsConsole.writeLine( digit + " is eight");
+	                break;
+	            case 9:
+	                jsConsole.writeLine( digit + " is nine");
+	                break;
+	            default:
+	                jsConsole.writeLine( digit + " is not a digit");
+	        }
+	    }
+	    nameDigit();
+	</script>
+</body>
+</html>
