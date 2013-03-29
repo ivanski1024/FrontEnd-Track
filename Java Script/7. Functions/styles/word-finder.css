@@ -1,0 +1,28 @@
+﻿body {
+}
+
+
+#wrapper {
+    position: absolute;
+}
+
+
+
+
+
+#cs-true-label, #cs-true, #cs-false-label, #cs-false, .js-console-btn {
+    float: right;
+}
+
+
+#cs-false, .js-console-btn {
+    clear:right
+}
+
+
+#ta-text, #tb-word {
+}
+
+#ta-text {
+    clear: right;
+}

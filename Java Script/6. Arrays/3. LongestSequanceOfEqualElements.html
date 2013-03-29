@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+		function longestSequance (arr) {
+            var maxEl = arr[0];
+            var maxL=0; 
+            var currL=1;
+            for (var i = 1; i < arr.length; i++)
+            {
+                if (arr[i] == arr[i - 1])
+                {
+                    currL=currL+1;
+                }
+                else
+                {
+                    if (currL > maxL)
+                    {
+                        maxL = currL;
+                        maxEl = arr[i - 1];
+                        //jsConsole.writeLine("test");
+
+                    }
+                    currL = 1;
+                }
+                //jsConsole.writeLine("test");
+            }
+            for (var i = 0; i < maxL; i++)
+            {
+                jsConsole.write(maxEl + " ");
+            }
+        }
+		var arr = "2112332221";
+        longestSequance(arr);
+	</script>
+</body>
+</html>

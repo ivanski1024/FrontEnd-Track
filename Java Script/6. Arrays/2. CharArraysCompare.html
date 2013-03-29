@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+		function charArrayComparerer(firstArray, secondArray)
+		{
+			var same=true;
+			var length = firstArray.length < secondArray.length ? firstArray.length : secondArray.length;
+			var firstDifferent = -1;
+			for (var i = 0; i < length; i++)
+            {
+                if (firstArray[i] != secondArray[i])
+                {
+                    same = false;
+                    firstDifferent = i;
+                    break;
+                }
+            }
+            if (!same  )
+            {
+                if (firstArray[firstDifferent] < secondArray[firstDifferent])
+                {
+                    jsConsole.write(firstArray + " ");
+                    jsConsole.writeLine(secondArray);
+                }
+                else
+                {
+                    jsConsole.write(secondArray + " ");
+                    jsConsole.writeLine(firstArray);
+                }
+            }
+            else
+            {
+                if (firstArray.length <= secondArray.length)
+                {
+                    jsConsole.write(firstArray + " ");
+                    jsConsole.writeLine(secondArray);
+                }
+                else
+                {
+                    jsConsole.write(secondArray + " ");
+                    jsConsole.writeLine(firstArray);
+                }
+            }
+        }
+		
+		charArrayComparerer("pesho", "gosho");
+		charArrayComparerer("spas", "spasimir");
+		charArrayComparerer("abc_", "abc");
+	</script>
+</body>
+</html>

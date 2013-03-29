@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Word Finder</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+    <link href="styles/word-finder.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+
+
+        <label for="ta-text">Text:</label>
+        <textarea id="ta-text" class="js-console-input"></textarea><br />
+
+        <label for="tb-word">Word: </label>
+        <input id="tb-word" type="text" class="js-console-input" />
+
+        <input type="radio" name="case-sensitive" value="true" id="cs-true" />
+        <label for="cs-true" id="cs-true-label">Case Sensitive</label>
+
+        <input type="radio" name="case-sensitive" value="false" id="cs-false" />
+        <label for="cs-false" id="cs-false-label">Case Insensitive</label>
+
+        <a href="#" class="js-console-btn" onclick="buttonClick()">Find all</a>
+        <div id="js-console"></div>
+    </div>
+    <script src="scripts/js-console.js"></script>
+
+
+
+    <script>
+        function buttonClick() {
+            var text = jsConsole.read("#ta-text");
+            var word = jsConsole.read("#tb-word");
+            var caseSensitive;
+            if (document.getElementById("cs-true").checked)
+            {
+                caseSensitive = true;
+                wordFinder(text, word, caseSensitive);
+            }
+            else if (document.getElementById("cs-false").checked)
+            {
+                caseSensitive = false;
+                wordFinder(text, word, caseSensitive);
+            } 
+        }
+
+        function wordFinder(text, word, caseSensitivity) {
+            text = text.toString();
+            word = word.toString();
+            var sameLength = 0;
+            var output = "";
+            if (caseSensitivity)
+            {
+                for (var i = 0; i < text.length; i++)
+                {
+                    while (text[i + sameLength] == word[sameLength] && sameLength < word.length)
+                    {
+                        sameLength++;
+                    }
+                    if (sameLength == word.length)
+                    {
+                        output += "<span style=\"font-weight: bold; font-style: italic;\">";
+                        output += text.substring(i, i + sameLength);
+                        output += "</span>";
+                        i += sameLength - 1;
+                        sameLength = 0;
+                    }
+                    else
+                    {
+                        output += text[i];
+                    }
+                }
+            }
+            else
+            {
+                var textCopy = text.toLowerCase();
+                var wordCopy = word.toLowerCase();
+                for (var i = 0; i <= text.length - word.length; i++) {
+                    while ((textCopy[i + sameLength] == wordCopy[sameLength]) && sameLength < word.length)
+                    {
+                        sameLength++;
+                    }
+                    if (sameLength == word.length)
+                    {
+                        output += "<span style=\"font-weight: bold; \">";
+                        output += text.substring(i, i + sameLength);
+                        output += "</span>";
+                        i += sameLength - 1;
+                        sameLength = 0;
+                    }
+                    else
+                    {
+                        output += text[i];
+                    }
+                }
+            }
+            jsConsole.write(output);
+        }
+    </script>
+</body>
+</html>

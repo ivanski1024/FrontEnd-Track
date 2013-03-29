@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+		function printNumbers(n)
+		{
+			jsConsole.writeLine("N = " + n)
+			for(var i=1; i<=n; i++)
+			{
+				if(i%3!=0 || i%7!=0)
+				{
+					jsConsole.write(i+" ");
+				}
+				
+			}
+			jsConsole.writeLine();
+		}
+		printNumbers(50);
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+		function MinAndMax(array)
+		{
+			jsConsole.write("[")
+			var Min;
+			var Max;
+			for(var i=0; i<array.length; i++)
+			{
+				if(i==0)
+				{
+					Min = array[i];
+					Max = array[i];
+				}
+				else
+				{
+					if(Min>array[i])
+					{
+						Min=array[i];
+					}
+					if(Max<array[i])
+					{
+						Max=array[i];
+					}
+				}
+				jsConsole.write(array[i]);
+				if(i!=array.length-1)
+				{
+					jsConsole.write(", ");
+				}
+			}
+			jsConsole.writeLine("]");
+			jsConsole.writeLine("Min: " + Min);
+			jsConsole.writeLine("Max: " + Max);
+		}
+		array = [1, 5, 3, 2, 18, 3, -5, 19, 13, 24, -8, 6, 18, -2];
+		MinAndMax(array);
+	</script>
+</body>
+</html>

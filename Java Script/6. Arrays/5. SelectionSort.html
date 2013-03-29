@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+        function SeletionSort(arr)
+        {
+            var p=0;
+            while (p < arr.length)
+            {
+                var currMin = arr[p], minPos=p;
+
+                for (var j = p+1; j < arr.length; j++)
+                { 
+                    if(arr[j]<currMin)
+                    {
+                        currMin=arr[j];
+                        minPos=j;
+                    }
+                }
+                var boof = arr[p];
+                arr[p] = arr[minPos];
+                arr[minPos] = boof;
+                p++;
+            }
+            for (var j = 0; j < arr.length; j++)
+            {
+                jsConsole.write(arr[j] + " ");
+            }
+        }
+
+        var arr = [1, 8, 6, 5, 3, 10, 2, 8, 8, 4, 13];
+        SeletionSort(arr);
+	</script>
+</body>
+</html>

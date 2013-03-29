@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>div-Element Counter</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <a href="#" class="js-console-btn" onclick="buttonClick()">Count</a>
+    <div id="js-console"></div>
+
+    <div></div>
+    <div></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function buttonClick()
+        {
+            jsConsole.writeLine("Count of 'div' tags in the current document: " + divCounter());
+        }
+        function divCounter()
+        {
+            return document.getElementsByTagName("div").length;
+        }
+    </script>
+</body>
+</html>

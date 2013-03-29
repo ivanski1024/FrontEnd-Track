@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+        function MaximalIncreasingSequance(arr)
+        {
+            var startPos = 0;
+            var maxL = 1;
+            var currL = 1;
+
+
+            for (var i = 1; i < arr.length; i++)
+            {
+                if ( arr[i] > arr[i - 1] )
+                {
+                    currL++;
+                }
+                else
+                {
+                    if (currL > maxL)
+                    {
+                        maxL = currL;
+                        startPos = i - maxL;
+                    }
+                    currL = 1;
+                }
+            }
+            if (currL > maxL)
+            {
+                maxL = currL;
+                startPos = arr.length - maxL;
+            }
+            for (var i = startPos; i < startPos+maxL; i++)
+            {
+            //jsConsole.write("test");
+                jsConsole.write(arr[i] + " ");
+            }
+        }
+        var array = [1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 5, 1, 2, 3];
+        MaximalIncreasingSequance(array);
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+        function MostFrequantElement(arr)
+        {
+            var seenNumbers = new Array();
+            for (var i = 0; i < arr.length; i++)
+            {
+                for (var j = 0; j < seenNumbers.length; j++)
+                {
+                    if (seenNumbers[j][0] == arr[i])
+                    {
+                        seenNumbers[j][1]++;
+                        break;
+                    }
+                }
+                if (j == seenNumbers.length)
+                {
+
+                    seenNumbers.push( new Array(arr[i], 1) );
+                }
+            }
+            var maxSeenElement = 0;
+            for( var i=1; i<seenNumbers.length; i++)
+            {
+                if(seenNumbers[maxSeenElement][1] < seenNumbers[i][1] )
+                {
+                    maxSeenElement = i;
+                }
+            }
+            jsConsole.writeLine(seenNumbers[maxSeenElement][0] + " is seen " + seenNumbers[maxSeenElement][1] + " times");
+        }
+        var arr = [4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3];
+        MostFrequantElement(arr);
+	</script>
+</body>
+</html>

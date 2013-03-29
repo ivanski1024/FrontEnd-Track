@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-numbers"> Enter Numbers seperated with ' ': </label>
+	<input id="tb-numbers" type="text" class="js-console-input" />
+	<label for="tb-number">Enter the number you search for: </label>
+	<input id="tb-number" type="text" class="js-console-input" />
+	<a href="#" class="js-console-btn" onclick="buttonClick()">Find All</a>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function buttonClick()
+        {
+            var arrayay = jsConsole.read("#tb-numbers");
+            var number = jsConsole.read("#tb-number");
+            arrayay = arrayay.split(" ");
+
+            jsConsole.writeLine("The count of occurances of " + number + "in the given arrayay: " + findElementInarrayay(arrayay, number));
+        }
+        function findElementInarrayay(arrayay, number)
+        {
+            var count = 0;
+            for (var i = 0; i < arrayay.length; i++)
+            {
+                if (arrayay[i] == number)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+    </script>
+	
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <label for="tb-numbers">Enter Numbers seperated with ' ': </label>
+    <input id="tb-numbers" type="text" class="js-console-input" />
+    <label for="tb-position">Enter the position you search for: </label>
+    <input id="tb-position" type="text" class="js-console-input" />
+    <a href="#" class="js-console-btn" onclick="buttonClick()">Check Neighbour</a>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function buttonClick() {
+
+            var array = jsConsole.read("#tb-numbers");
+            var position = jsConsole.read("#tb-position");
+            array = array.split(' ');
+            for (var i = 0; i < array.length; i++) {
+                array[i] = parseFloat(array[i]);
+            }
+            position = parseFloat(position);
+            var output = biggerThanNeighbours(array, position);
+            if (typeof output == "boolean") {
+                jsConsole.writeLine("Element on position " + position + " is bigger than its neighbours. " + output);
+            }
+            else {
+                jsConsole.writeLine(output);
+            }
+        }
+        function biggerThanNeighbours(array, position) {
+            var length = array.length;
+            if (position > 0 && position < length - 1) {
+                return (array[position] > array[position - 1]) && (array[position] > array[position + 1]);
+            }
+            else if (position == 0) {
+                return (array[position] > array[position + 1]);
+            }
+            else if (position == length - 1) {
+                return (array[position] > array[position - 1]);
+            }
+            else {
+                return "Index out of the range of the array!";
+            }
+        }
+    </script>
+</body>
+</html>

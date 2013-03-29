@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+        function BinarySearch(array, left, right, element)
+        {
+            if (left == right)
+            {
+                if (array[left] == element)
+                {
+                    return left;
+                }
+                else
+                {
+                    return -left-1;
+                }
+            }
+            else 
+            {
+                var center = parseInt((right - left) / 2) + left;
+                if (array[center] == element)
+                {
+                    return center;
+                }
+                else if (array[center] > element)
+                {
+                    return BinarySearch(array, left, center - 1, element);
+                }
+                else if (array[center] < element)
+                {
+                    return BinarySearch(array, center + 1, right, element);
+                }
+            }
+            return 0;
+        }
+
+        var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var element = 6;
+
+        jsConsole.writeLine(element + " is with index " + BinarySearch(array, 0, array.length-1, element) );
+	</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+	<script>
+		function GetProperties () {
+			var objects = [document, window, navigator];
+	        for (var i = 0; i < 3; i++) 
+	        {
+	            var arr = new Array();
+	            for (var property in objects[i]) {
+	                arr.push(property);
+	            }
+	            arr.sort();
+	            jsConsole.writeLine("Lexicographically smallest: " + arr[1] + ";");
+	            jsConsole.writeLine("Lexicographically largest: " + arr[arr.length - 1] + ";");
+	            jsConsole.writeLine();
+	        }
+	    }
+	    GetProperties();
+	</script>
+</body>
+</html>
